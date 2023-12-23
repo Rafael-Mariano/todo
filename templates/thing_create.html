@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="text-3xl">Creating a New Thing</h1>
+<form method="post" class="">
+    {% csrf_token %}
+
+    {% for field in form %}
+        <div class="mb-1">
+            <label class="text-gray-600" for="{{field.id.for_label}}">
+                {{field.label_tag}}
+            </label>
+            
+            {{field}}
+        </div>
+    {% endfor %}
+
+    <button type="submit" class="text-neutral-400 bg-green-100">Submit</button>
+</form>
+
+{% endblock %}

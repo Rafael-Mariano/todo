@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="px-3 py-2 bg-gray-100 rounded-sm">
+    <h3 class="text-3xl text-gray-900">{{thing.title}}</h3>
+    <p class="bg-slate-50">{{ thing.description }}</p>
+    <p>{{ thing.data }}</p>
+    {% if request.user.is_staff %}
+    <div class="border-t ">
+        <a href="/things/{{ thing.id }}/edit" class="px-1 py-1 bg-green-100 rounded-sm text-xs">
+            Edit
+        </a>
+        {% if request.user.is_superuser %}
+        <a href="/things/{{ thing.id }}/delete" class="px-1 py-1 bg-red-100 rounded-sm text-xs">
+            Delete
+        </a>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+
+{% endblock %}

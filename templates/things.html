@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="pt-4 pb-4 pl-4 bg-green-100">
+    <h1 class="text-4xl scroll-mt-5">TODO LIST</h1>
+</div>
+<div class="pt-2 pb-2 flex justify-between">
+    <a href="/add-thing/" class="rounded-md border-gray-200 bg-yellow-100 text-neutral-400">Create a New Task</a>
+    
+    <a href="/admin">Log</a>
+</div>
+<div class="space-y-2">
+{% for thing in things %}
+<h6 class="text-xs text-red-400">Data para conclusão - {{thing.data}}</h6>
+<div class="px-3 py-2 bg-gray-100 rounded-sm">
+    
+    <h3 class="text-3xl text-gray-900">{{thing.title}}</h3>
+    <div class="space-y-10">
+        <a href="/things/{{ thing.id }}" class="text-xs text-blue-500 rounded-md">
+            View Details
+        </a>
+    </div>
+</div>
+
+{% endfor %}
+</div>
+{% endblock %}
