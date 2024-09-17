@@ -2,7 +2,10 @@
 <br>
 <table>
 <tr>
-  1. the first moment is necessary a virtual environment
+  <td>
+    1. the first moment is necessary a virtual environment  
+  </td>
+  
 </tr>
 2. install django
 3. use django-admin startproject <nome do projeto>
