@@ -1,4 +1,5 @@
 # how to start a django webpage font justdjango.com
+<br>
 1. the first moment is necessary a virtual environment
 2. install django
 3. use django-admin startproject <nome do projeto>
