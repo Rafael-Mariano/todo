@@ -1,4 +1,4 @@
-# how to start a django webpage font justdjango.com
+## How to start a django webpage font justdjango.com
 <br>
 <table>
 <tr>
