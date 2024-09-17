@@ -37,42 +37,62 @@
   </td>
 </tr>
 
+
 <tr>
   <td>
-    1
+    5
   </td>
   <td>
-    the first moment is necessary a virtual environment  
+    python manage.py runserver to see if the server is running correctly
   </td>
 </tr>
 
 <tr>
   <td>
-    1
+    6
   </td>
   <td>
-    the first moment is necessary a virtual environment  
+    you need to create a superuser to administer the page with 'python manage.py createsuperuser'
   </td>
 </tr>
 
 <tr>
   <td>
-    1
+    7
   </td>
   <td>
-    the first moment is necessary a virtual environment  
+    another step is create an app 'python manage.py startapp <App's name>'  
   </td>
 </tr>
-2. 
-3. 
-4. 
-5. python manage.py runserver to see if the server is running correctly
-6. you need to create a superuser to administer the page with 'python manage.py createsuperuser'
-7. another step is create an app 'python manage.py startapp <App's name>'
-8. in models.py create a model to manage data
-9. after this you need to update the migrate 'python manage.py makemigrations'
-10. python manage.py migrate to apply the changes at the database
-  
+
+
+<tr>
+  <td>
+    8
+  </td>
+  <td>
+    in models.py create a model to manage data 
+  </td>
+</tr>
+
+<tr>
+  <td>
+    9
+  </td>
+  <td>
+    after this you need to update the migrate 'python manage.py makemigrations' 
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+    10
+  </td>
+  <td>
+    python manage.py migrate to apply the changes at the database  
+  </td>
+</tr>
 </table>
 
 
