@@ -1,6 +1,9 @@
 # how to start a django webpage font justdjango.com
 <br>
-1. the first moment is necessary a virtual environment
+<table>
+<tr>
+  1. the first moment is necessary a virtual environment
+</tr>
 2. install django
 3. use django-admin startproject <nome do projeto>
 4. python manage.py migrate creates the db.sqlite3
@@ -10,6 +13,8 @@
 8. in models.py create a model to manage data
 9. after this you need to update the migrate 'python manage.py makemigrations'
 10. python manage.py migrate to apply the changes at the database
+  
+</table>
 
 
 
